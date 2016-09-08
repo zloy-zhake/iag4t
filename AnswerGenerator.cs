@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -38,6 +38,23 @@ namespace iag4t
 				this.input_lines.Add(new string[2] { tmp_str_arr[i], tmp_str_arr[i + 1] });
 			}
 		}
+		
+		void Generate_Answers()
+		{
+			// Создать массив output_lines[][6]
+//{
+//	Q1,A1,A-,A-,A-,A-;
+// ...
+//	Qn,An,A-,A-,A-,A-;
+//}
+// A- выбираются случайным образом из всех A, кроме правильного.
+		}
+		
+		void Save_Tests_To_File()
+		{
+			// создать файл
+// вывести в него массив output_lines
+// закрыть файл
+		}
 	}
 }
-
