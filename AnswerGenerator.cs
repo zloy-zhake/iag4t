@@ -50,6 +50,22 @@ namespace iag4t
 //	Qn,An,A-,A-,A-,A-;
 //}
 // A- выбираются случайным образом из всех A, кроме правильного.
+
+// If you just want to generate a random number that never repeats you could do something like this
+
+	private Random rand = new Random();
+private List<int> used = new List<int>;
+protected int randomNonrepeating()
+	{
+		 int i = rand.next();
+		 while(used.contains(i)){
+		 		i = rand.next();
+		 	}
+		 	used.add(i);
+		 	return i;
+			 	}
+			 	}
+
 		}
 		
 		void Save_Tests_To_File()
