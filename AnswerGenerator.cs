@@ -10,6 +10,7 @@ namespace iag4t
 		private string output_file;
 		private int answers_count;
 		List<string[]> input_lines;
+		List<string[]> output_lines;
 
 		public AnswerGenerator(string in_f,
 		                       string out_f,
@@ -19,6 +20,7 @@ namespace iag4t
 			this.output_file = out_f;
 			this.answers_count = n_ans;
 			this.input_lines = new List<string[]>();
+			this.output_lines = new List<string[]>();
 		}
 
 		public void Read_From_File()
