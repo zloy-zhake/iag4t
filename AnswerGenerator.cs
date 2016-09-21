@@ -35,44 +35,80 @@ namespace iag4t
 
 			string[] tmp_str_arr = File.ReadAllLines(this.input_file);
 
-			for(int i = 0; i < tmp_str_arr.Length; i + 2)
+			for(int i = 0; i < tmp_str_arr.Length; i = i + 2)
 			{
 				this.input_lines.Add(new string[2] { tmp_str_arr[i], tmp_str_arr[i + 1] });
 			}
 		}
-		
-		void Generate_Answers()
+
+		public void Generate_Answers()
 		{
 			// Создать массив output_lines[][6]
-//{
-//	Q1,A1,A-,A-,A-,A-;
-// ...
-//	Qn,An,A-,A-,A-,A-;
-//}
-// A- выбираются случайным образом из всех A, кроме правильного.
+			//{
+			//	Q1,A1,A-,A-,A-,A-;
+			// ...
+			//	Qn,An,A-,A-,A-,A-;
+			//}
+			// A- выбираются случайным образом из всех A, кроме правильного.
 
-// If you just want to generate a random number that never repeats you could do something like this
+			// созадать массив всех ответов
+			List<string> all_answers = new List<string>();
+			foreach(var line in this.input_lines)
+			{
+				all_answers.Add(line[1]);
+			}
 
-	private Random rand = new Random();
-private List<int> used = new List<int>;
-protected int randomNonrepeating()
-	{
-		 int i = rand.next();
-		 while(used.contains(i)){
-		 		i = rand.next();
-		 	}
-		 	used.add(i);
-		 	return i;
-			 	}
-			 	}
+			// скопировать в output_lines вопросы и правильные ответы
+			foreach(var line in this.input_lines)
+			{
+				this.output_lines.Add(new string[6] { line[0], line[1], "", "", "", "" });
+			}
 
+			// добавить неправильные варианты ответов
+
+			// временный массив для неправильных вариантов ответов
+			// DELETE string[] tmp_incorrect_answers = new string[4]();
+			List<int> answer_indexes = new List<int>();
+			Random rand = new Random();
+
+			int i, j, k, v;
+
+			for(i = 0; i < this.output_lines.Count; ++i)
+			{
+				// подбираем индексы случайных ответов, исключая индекс правильного ответа
+				for(j = 0; j < 4; ++j)
+				{
+					v = rand.Next(all_answers.Count);
+					while((answer_indexes.Contains(v)) || (v == i))
+					{
+						v = rand.Next(all_answers.Count);
+					}
+					answer_indexes.Add(v);
+				}
+
+				// добавляем неверные варианты ответов в output_lines согласно подобранным индексам
+				for(k = 0; k < 4; ++k)
+				{
+					this.output_lines[i][k + 2]	= all_answers[answer_indexes[k]];
+				}
+
+				answer_indexes.Clear();
+			}
 		}
-		
-		void Save_Tests_To_File()
+
+		public void Save_Tests_To_File()
 		{
-			// создать файл
-// вывести в него массив output_lines
-// закрыть файл
+			// вывести в файл массив output_lines
+
+			if(!File.Exists(this.output_file))
+			{
+				foreach(var test in output_lines)
+				{
+					File.AppendAllLines(this.output_file, test);
+					File.AppendAllText(this.output_file, "\n");
+				}
+
+			}
 		}
 	}
 }

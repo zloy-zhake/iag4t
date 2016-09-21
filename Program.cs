@@ -36,9 +36,13 @@ namespace iag4t
 		{
 			// TODO Распарсить вывод командной строки и передать значения в конструктор AG
 			// выполнить все проверки на корректность, формат и существование
-			var AG = new AnswerGenerator(args[0], "", 5);
+			// var AG = new AnswerGenerator(args[0], "", 5);
+
+			var AG = new AnswerGenerator("input", "output", 5);
 
 			AG.Read_From_File();
+			AG.Generate_Answers();
+			AG.Save_Tests_To_File();
 
 		}
 
