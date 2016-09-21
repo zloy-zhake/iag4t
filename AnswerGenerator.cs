@@ -41,6 +41,7 @@ namespace iag4t
 			}
 		}
 
+		// TODO разбить метод на несколько служебных методов, а то большеват
 		public void Generate_Answers()
 		{
 			// Создать массив output_lines[][6]
