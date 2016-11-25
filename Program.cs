@@ -25,6 +25,7 @@
 //TODO add docopt
 //TODO add tests
 //TODO multilang?
+//TODO сохранять по умолчанию в файл, stdout по отдельному ключу
 
 using System;
 
