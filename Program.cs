@@ -23,9 +23,10 @@
 
 //TODO учитывать, что на вход может подаваться вопрос с несколькими правильными вариантами ответов.
 //TODO add docopt
-//TODO add tests
+//TODO add tests (NUnit)
 //TODO multilang?
 //TODO сохранять по умолчанию в файл, stdout по отдельному ключу
+//TODO хорошо подумать о переводе на dotnet core
 
 using System;
 
