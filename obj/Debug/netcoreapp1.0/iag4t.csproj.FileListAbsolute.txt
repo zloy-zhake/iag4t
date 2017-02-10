@@ -1,0 +1,16 @@
+/tmp/iag4t/bin/Debug/netcoreapp1.0/iag4t.deps.json
+/tmp/iag4t/bin/Debug/netcoreapp1.0/iag4t.runtimeconfig.json
+/tmp/iag4t/bin/Debug/netcoreapp1.0/iag4t.runtimeconfig.dev.json
+/tmp/iag4t/bin/Debug/netcoreapp1.0/iag4t.dll
+/tmp/iag4t/bin/Debug/netcoreapp1.0/iag4t.pdb
+/tmp/iag4t/obj/Debug/netcoreapp1.0/iag4t.AssemblyInfo.cs
+/tmp/iag4t/obj/Debug/netcoreapp1.0/iag4t.dll
+/tmp/iag4t/obj/Debug/netcoreapp1.0/iag4t.pdb
+/home/zhake/Projects/iag4t/bin/Debug/netcoreapp1.0/iag4t.deps.json
+/home/zhake/Projects/iag4t/bin/Debug/netcoreapp1.0/iag4t.runtimeconfig.json
+/home/zhake/Projects/iag4t/bin/Debug/netcoreapp1.0/iag4t.runtimeconfig.dev.json
+/home/zhake/Projects/iag4t/bin/Debug/netcoreapp1.0/iag4t.dll
+/home/zhake/Projects/iag4t/bin/Debug/netcoreapp1.0/iag4t.pdb
+/home/zhake/Projects/iag4t/obj/Debug/netcoreapp1.0/iag4t.AssemblyInfo.cs
+/home/zhake/Projects/iag4t/obj/Debug/netcoreapp1.0/iag4t.dll
+/home/zhake/Projects/iag4t/obj/Debug/netcoreapp1.0/iag4t.pdb

@@ -2,23 +2,22 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch",
-            "type": "mono",
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
             "request": "launch",
-            "program": "${workspaceRoot}/bin/Debug/iag4t.exe",
+            "preLaunchTask": "build",
+            "program": "${workspaceRoot}/bin/Debug/netcoreapp1.0/iag4t.dll",
             "args": [],
             "cwd": "${workspaceRoot}",
-            "preLaunchTask": "",
-            "runtimeExecutable": null,
-            "env": {},
-            "externalConsole": false
+            "externalConsole": false,
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart"
         },
         {
-            "name": "Attach",
-            "type": "mono",
+            "name": ".NET Core Attach",
+            "type": "coreclr",
             "request": "attach",
-            "address": "localhost",
-            "port": 55555
+            "processId": "${command.pickProcess}"
         }
     ]
 }

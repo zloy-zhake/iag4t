@@ -1,0 +1,91 @@
+What kind of a type is char(n)?
+fixed-length character string with user-specified length n
+variable-length character string with user-specified maximum length n
+load data into the relation
+integer
+remove a relation from an SQL database
+
+What kind of a type is varchar(n)?
+variable-length character string with user-specified maximum length n
+fixed-length character string with user-specified length n
+floating-point number, with precision of at least n digits.
+delete tuples from a relation
+a value that indicates an absent value that may exist but be unknown or that may not exist at all
+
+What kind of a type is int?
+integer
+add attributes to an existing relation
+delete tuples from a relation
+floating-point number, with precision of at least n digits.
+load data into the relation
+
+What kind of a type is smallint?
+small integer
+add attributes to an existing relation
+floating-point number, with precision of at least n digits.
+a value that indicates an absent value that may exist but be unknown or that may not exist at all
+define an SQL relation
+
+What kind of a type is numeric(p, d)?
+fixed-point number with user-specified precision.
+delete tuples from a relation
+define an SQL relation
+variable-length character string with user-specified maximum length n
+small integer
+
+What kind of a type are real and double precision?
+floating-point and double-precision floating-point numbers with machine-dependent precision
+variable-length character string with user-specified maximum length n
+load data into the relation
+integer
+small integer
+
+What kind of a type is float(n)?
+floating-point number, with precision of at least n digits.
+fixed-point number with user-specified precision.
+a value that indicates an absent value that may exist but be unknown or that may not exist at all
+floating-point and double-precision floating-point numbers with machine-dependent precision
+load data into the relation
+
+What is a null value?
+a value that indicates an absent value that may exist but be unknown or that may not exist at all
+fixed-point number with user-specified precision.
+variable-length character string with user-specified maximum length n
+small integer
+floating-point number, with precision of at least n digits.
+
+What does create table command do?
+define an SQL relation
+a value that indicates an absent value that may exist but be unknown or that may not exist at all
+integer
+remove a relation from an SQL database
+delete tuples from a relation
+
+What does insert command do?
+load data into the relation
+delete tuples from a relation
+fixed-length character string with user-specified length n
+variable-length character string with user-specified maximum length n
+fixed-point number with user-specified precision.
+
+What does delete command do?
+delete tuples from a relation
+remove a relation from an SQL database
+fixed-length character string with user-specified length n
+fixed-point number with user-specified precision.
+floating-point number, with precision of at least n digits.
+
+What does drop table command do?
+remove a relation from an SQL database
+add attributes to an existing relation
+fixed-point number with user-specified precision.
+variable-length character string with user-specified maximum length n
+fixed-length character string with user-specified length n
+
+What does alter table command do?
+add attributes to an existing relation
+floating-point number, with precision of at least n digits.
+remove a relation from an SQL database
+load data into the relation
+fixed-point number with user-specified precision.
+
